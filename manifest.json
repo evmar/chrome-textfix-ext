@@ -2,12 +2,11 @@
   "manifest_version": 2,
   "name": "Text Fix",
   "description": "A context menu item to make body text into a plain font.",
-  "version": "1",
+  "version": "2",
 
   "permissions": [
-    "contextMenus",
-    "tabs",
-    "<all_urls>"
+    "activeTab",
+    "contextMenus"
   ],
 
   "background": {
