@@ -49,16 +49,11 @@ function injectedFix() {
     }
   }
 
-  console.log('text applying new CSS rules:', newRules);
-  var link = document.createElement('link');
-  link.href = 'http://fonts.googleapis.com/css?family=Open+Sans';
-  link.rel = 'stylesheet';
-  document.head.appendChild(link);
   var style = document.createElement('style');
+  style.innerText = '@import url(https://fonts.googleapis.com/css?family=Open+Sans);';
   for (var i = 0; i < newRules.length; ++i) {
     style.innerText += newRules[i];
   }
-  console.log('style', style);
   document.head.appendChild(style);
 }
 
