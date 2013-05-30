@@ -9,10 +9,11 @@ function injectedFix() {
   }
 
   var allFixes = {
+    color: 'black',
     fontFamily: 'Open Sans',
-    fontWeight: 'normal',
     fontSize: '16px',
-    color: 'rgb(0, 0, 0)'
+    fontWeight: 'normal',
+    lineHeight: '1.6'
   };
 
   // Find the selected element.
